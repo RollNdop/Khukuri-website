@@ -24,7 +24,7 @@ body{
   background:var(--parchment);
   color:var(--charcoal);
   font-family:'Work Sans', sans-serif;
-  font-size:20px;
+  font-size:16px;
   line-height:1.6;
 }
 h1,h2,h3{
@@ -66,7 +66,7 @@ button{font-family:inherit;cursor:pointer;}
 }
 .brand{
   font-family:'Fraunces', serif;
-  font-size:20px;
+  font-size:28px;
   letter-spacing:0.01em;
   text-decoration:none;
   color:var(--bone);
@@ -74,7 +74,7 @@ button{font-family:inherit;cursor:pointer;}
 .brand span{
   display:block;
   font-family:'Work Sans', sans-serif;
-  font-size:11px;
+  font-size:14px;
   color:var(--brass);
   margin-top:2px;
 }
