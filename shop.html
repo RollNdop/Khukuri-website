@@ -34,102 +34,209 @@
   <div class="wrap">
     <p class="eyebrow">The collection</p>
     <h1>Every khukuri made to order</h1>
-    <p class="lede">Grouped the way our customers actually shop — for daily use, for tradition, or for the collection shelf. Prices shown are examples for this demo.</p>
+    <p class="lede">Organized by how people actually use them — not just by number. Prices and specs shown are examples for this demo.</p>
   </div>
 </section>
 
 <section class="collection">
   <div class="wrap">
 
-    <div class="category-heading">
-      <h2>Military &amp; service style</h2>
-      <p>Built to the profiles carried by Gurkha regiments, past and present.</p>
+    <div class="filter-bar">
+      <div class="filter-group">
+        <label for="filter-length">Blade length</label>
+        <select id="filter-length">
+          <option value="all">All lengths</option>
+          <option value="short">Short (under 8")</option>
+          <option value="medium">Medium (8"–12")</option>
+          <option value="long">Long (over 12")</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-handle">Handle material</label>
+        <select id="filter-handle">
+          <option value="all">All materials</option>
+          <option value="wood">Wood</option>
+          <option value="horn">Buffalo horn</option>
+          <option value="brass">Brass</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-price">Price</label>
+        <select id="filter-price">
+          <option value="all">Any price</option>
+          <option value="low">Under $100</option>
+          <option value="mid">$100–$150</option>
+          <option value="high">$150+</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-sheath">Sheath</label>
+        <select id="filter-sheath">
+          <option value="all">All sheath types</option>
+          <option value="leather">Leather</option>
+          <option value="wood">Wood</option>
+          <option value="leather-wood">Leather-wrapped wood</option>
+        </select>
+      </div>
+      <button type="button" id="filter-reset" class="filter-reset">Reset filters</button>
     </div>
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c12 8 18 24 15 42-2 12-9 22-15 30-6-8-13-18-15-30-3-18 3-34 15-42z"/></svg></div>
-        <div class="card-body">
-          <h3>Service No. 1</h3>
-          <p>The classic military profile, forged the traditional way.</p>
-          <p class="card-price">From $130</p>
-        </div>
+
+    <p id="no-results">No khukuris match these filters — try resetting them.</p>
+
+    <div class="category-block">
+      <div class="category-heading">
+        <h2>Military / Gurkha-Style Khukuris</h2>
+        <p>Built to the profiles carried by Gurkha regiments, past and present.</p>
       </div>
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 10c8 10 14 26 11 44-2 10-7 20-11 28-4-8-9-18-11-28-3-18 3-34 11-44z"/></svg></div>
-        <div class="card-body">
-          <h3>Gurkha Issue</h3>
-          <p>A field-ready profile with a wide fuller for extra strength.</p>
-          <p class="card-price">From $140</p>
+      <div class="card-grid">
+        <div class="card" data-length="long" data-handle="wood" data-price="mid" data-sheath="leather-wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c12 8 18 24 15 42-2 12-9 22-15 30-6-8-13-18-15-30-3-18 3-34 15-42z"/></svg></div>
+          <div class="card-body">
+            <h3>Service No. 1</h3>
+            <p>The classic military profile, forged the traditional way.</p>
+            <p class="card-price">From $130</p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c9 9 15 23 12 40-2 11-8 21-12 28-4-7-10-17-12-28-3-17 3-31 12-40z"/></svg></div>
-        <div class="card-body">
-          <h3>Ceremonial Dress Knife</h3>
-          <p>A refined finish for presentation and formal occasions.</p>
-          <p class="card-price">From $150</p>
+        <div class="card" data-length="long" data-handle="wood" data-price="mid" data-sheath="leather-wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 10c8 10 14 26 11 44-2 10-7 20-11 28-4-8-9-18-11-28-3-18 3-34 11-44z"/></svg></div>
+          <div class="card-body">
+            <h3>Gurkha Issue</h3>
+            <p>A field-ready profile with a wide fuller for extra strength.</p>
+            <p class="card-price">From $140</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="category-heading">
-      <h2>Traditional &amp; everyday</h2>
-      <p>The working khukuri, as carried in villages across Nepal.</p>
-    </div>
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c10 10 16 26 12 44-2 10-8 20-12 26-4-6-10-16-12-26-4-18 2-34 12-44z"/></svg></div>
-        <div class="card-body">
-          <h3>Angkhola khukuri</h3>
-          <p>Full-tang, deep fuller, built for heavy daily use.</p>
-          <p class="card-price">From $95</p>
-        </div>
+    <div class="category-block">
+      <div class="category-heading">
+        <h2>Camping &amp; Bushcraft</h2>
+        <p>Everyday, working khukuris built for the trail, the farm, or the campsite.</p>
       </div>
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 10c6 12 8 30 4 46-2 8-6 18-4 30-2-8-8-18-10-28-4-18 2-36 10-48z"/></svg></div>
-        <div class="card-body">
-          <h3>Sirupate khukuri</h3>
-          <p>Slender blade, faster in the hand, favoured by collectors.</p>
-          <p class="card-price">From $110</p>
+      <div class="card-grid">
+        <div class="card" data-length="medium" data-handle="wood" data-price="low" data-sheath="leather-wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c10 10 16 26 12 44-2 10-8 20-12 26-4-6-10-16-12-26-4-18 2-34 12-44z"/></svg></div>
+          <div class="card-body">
+            <h3>Angkhola khukuri</h3>
+            <p>Full-tang, deep fuller, built for heavy daily use.</p>
+            <p class="card-price">From $95</p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 14c11 8 17 22 14 38-2 10-8 19-14 25-6-6-12-15-14-25-3-16 3-30 14-38z"/></svg></div>
-        <div class="card-body">
-          <h3>Villager khukuri</h3>
-          <p>A simple, sturdy everyday profile for farm and camp use.</p>
-          <p class="card-price">From $80</p>
+        <div class="card" data-length="short" data-handle="wood" data-price="low" data-sheath="wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 14c11 8 17 22 14 38-2 10-8 19-14 25-6-6-12-15-14-25-3-16 3-30 14-38z"/></svg></div>
+          <div class="card-body">
+            <h3>Villager khukuri</h3>
+            <p>A simple, sturdy everyday profile for farm and camp use.</p>
+            <p class="card-price">From $80</p>
+          </div>
+        </div>
+        <div class="card" data-length="long" data-handle="horn" data-price="mid" data-sheath="leather">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 10c6 12 8 30 4 46-2 8-6 18-4 30-2-8-8-18-10-28-4-18 2-36 10-48z"/></svg></div>
+          <div class="card-body">
+            <h3>Sirupate khukuri</h3>
+            <p>Slender blade, faster in the hand, favoured on the trail.</p>
+            <p class="card-price">From $110</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="category-heading">
-      <h2>Collector's &amp; decorative</h2>
-      <p>Detailed finishes for display, gifting, and special orders.</p>
+    <div class="category-block">
+      <div class="category-heading">
+        <h2>Kitchen / Chef's Khukuri</h2>
+        <p>The khukuri's curve and weight, adapted for the kitchen counter.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-length="short" data-handle="wood" data-price="low" data-sheath="leather">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 16c8 7 13 18 11 32-1 8-6 16-11 21-5-5-10-13-11-21-2-14 3-25 11-32z"/></svg></div>
+          <div class="card-body">
+            <h3>Chef's Khukuri</h3>
+            <p>A thinner, lighter blade for prep work, built around the same curve.</p>
+            <p class="card-price">From $75</p>
+          </div>
+        </div>
+        <div class="card" data-length="short" data-handle="horn" data-price="low" data-sheath="wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 18c7 6 11 16 9 28-1 7-5 14-9 18-4-4-8-11-9-18-2-12 2-22 9-28z"/></svg></div>
+          <div class="card-body">
+            <h3>Kitchen Utility Khukuri</h3>
+            <p>A compact everyday blade sized for the kitchen, not the field.</p>
+            <p class="card-price">From $65</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c13 9 19 24 16 40-2 11-9 21-16 29-7-8-14-18-16-29-3-16 3-31 16-40z"/></svg></div>
-        <div class="card-body">
-          <h3>Silver-fitted khukuri</h3>
-          <p>Engraved silver detailing on the sheath and handle.</p>
-          <p class="card-price">From $220</p>
+
+    <div class="category-block">
+      <div class="category-heading">
+        <h2>Ceremonial &amp; Wedding Khukuris</h2>
+        <p>Detailed finishes for formal occasions and gifting.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-length="medium" data-handle="brass" data-price="high" data-sheath="leather-wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c9 9 15 23 12 40-2 11-8 21-12 28-4-7-10-17-12-28-3-17 3-31 12-40z"/></svg></div>
+          <div class="card-body">
+            <h3>Ceremonial Dress Khukuri</h3>
+            <p>A refined finish for presentation and formal occasions.</p>
+            <p class="card-price">From $155</p>
+          </div>
+        </div>
+        <div class="card" data-length="medium" data-handle="brass" data-price="high" data-sheath="leather-wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c10 9 16 22 13 38-2 10-8 19-13 26-5-7-11-16-13-26-3-16 3-29 13-38z"/></svg></div>
+          <div class="card-body">
+            <h3>Wedding Gift Khukuri</h3>
+            <p>Engraving available — a traditional gift for a new household.</p>
+            <p class="card-price">From $175</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 10c7 11 12 27 9 43-2 9-7 19-9 29-2-10-7-20-9-29-3-16 2-32 9-43z"/></svg></div>
-        <div class="card-body">
-          <h3>Carved display khukuri</h3>
-          <p>Hand-carved wooden sheath, made for the display stand.</p>
-          <p class="card-price">From $105</p>
+    </div>
+
+    <div class="category-block">
+      <div class="category-heading">
+        <h2>Collector's &amp; Decorative Editions</h2>
+        <p>Detailed finishes made for display, not daily use.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-length="medium" data-handle="horn" data-price="high" data-sheath="leather-wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 12c13 9 19 24 16 40-2 11-9 21-16 29-7-8-14-18-16-29-3-16 3-31 16-40z"/></svg></div>
+          <div class="card-body">
+            <h3>Silver-fitted khukuri</h3>
+            <p>Engraved silver detailing on the sheath and handle.</p>
+            <p class="card-price">From $220</p>
+          </div>
+        </div>
+        <div class="card" data-length="medium" data-handle="wood" data-price="mid" data-sheath="wood">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 10c7 11 12 27 9 43-2 9-7 19-9 29-2-10-7-20-9-29-3-16 2-32 9-43z"/></svg></div>
+          <div class="card-body">
+            <h3>Carved display khukuri</h3>
+            <p>Hand-carved wooden sheath, made for the display stand.</p>
+            <p class="card-price">From $105</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 15c9 6 14 17 12 30-1 8-6 15-12 20-6-5-11-12-12-20-2-13 3-24 12-30z"/></svg></div>
-        <div class="card-body">
-          <h3>Miniature khukuri</h3>
-          <p>A small-format piece, popular as a keepsake or gift.</p>
-          <p class="card-price">From $35</p>
+    </div>
+
+    <div class="category-block">
+      <div class="category-heading">
+        <h2>Miniatures &amp; Souvenirs</h2>
+        <p>Small-format pieces, popular as keepsakes and gifts.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-length="short" data-handle="wood" data-price="low" data-sheath="leather">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 15c9 6 14 17 12 30-1 8-6 15-12 20-6-5-11-12-12-20-2-13 3-24 12-30z"/></svg></div>
+          <div class="card-body">
+            <h3>Miniature khukuri</h3>
+            <p>A small-format piece, popular as a keepsake or gift.</p>
+            <p class="card-price">From $35</p>
+          </div>
+        </div>
+        <div class="card" data-length="short" data-handle="brass" data-price="low" data-sheath="leather">
+          <div class="card-art"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M50 20c5 5 8 12 7 21-1 5-4 10-7 13-3-3-6-8-7-13-1-9 2-16 7-21z"/></svg></div>
+          <div class="card-body">
+            <h3>Keychain khukuri</h3>
+            <p>A tiny working replica, sized for a keychain or bag charm.</p>
+            <p class="card-price">From $15</p>
+          </div>
         </div>
       </div>
     </div>
@@ -174,9 +281,51 @@
         </ul>
       </div>
     </div>
-    <p class="footer-note">Concept site prepared for the Bishwakarma Khukuri Industry website project. Prices and product names are placeholders for this demo.</p>
+    <p class="footer-note">Concept site prepared for the Bishwakarma Khukuri Industry website project. Prices, specs, and product names are placeholders for this demo.</p>
   </div>
 </footer>
+
+<script>
+  function applyFilters() {
+    var length = document.getElementById('filter-length').value;
+    var handle = document.getElementById('filter-handle').value;
+    var price = document.getElementById('filter-price').value;
+    var sheath = document.getElementById('filter-sheath').value;
+    var cards = document.querySelectorAll('.card');
+    var visibleCount = 0;
+
+    cards.forEach(function (card) {
+      var matches =
+        (length === 'all' || card.dataset.length === length) &&
+        (handle === 'all' || card.dataset.handle === handle) &&
+        (price === 'all' || card.dataset.price === price) &&
+        (sheath === 'all' || card.dataset.sheath === sheath);
+      card.style.display = matches ? '' : 'none';
+      if (matches) visibleCount++;
+    });
+
+    document.querySelectorAll('.category-block').forEach(function (block) {
+      var anyVisible = Array.from(block.querySelectorAll('.card')).some(function (c) {
+        return c.style.display !== 'none';
+      });
+      block.style.display = anyVisible ? '' : 'none';
+    });
+
+    document.getElementById('no-results').style.display = visibleCount === 0 ? 'block' : 'none';
+  }
+
+  ['filter-length', 'filter-handle', 'filter-price', 'filter-sheath'].forEach(function (id) {
+    document.getElementById(id).addEventListener('change', applyFilters);
+  });
+
+  document.getElementById('filter-reset').addEventListener('click', function () {
+    document.getElementById('filter-length').value = 'all';
+    document.getElementById('filter-handle').value = 'all';
+    document.getElementById('filter-price').value = 'all';
+    document.getElementById('filter-sheath').value = 'all';
+    applyFilters();
+  });
+</script>
 
 </body>
 </html>
