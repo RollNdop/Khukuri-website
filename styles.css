@@ -133,7 +133,7 @@ nav.primary-nav a[aria-current="page"]{border-color:var(--brass);}
   padding-bottom:88px;
 }
 .hero-copy .eyebrow{font-size:14px;color:var(--brass);margin-bottom:18px;}
-.hero-copy h1{font-size:clamp(38px,5vw,58px);max-width:12ch;}
+.hero-copy h1{font-size:clamp(38px,5vw,58px);max-width:12ch;color:var(--bone);}
 .hero-copy p.lede{
   font-family:'Work Sans', sans-serif;
   font-size:18px;
@@ -153,7 +153,7 @@ nav.primary-nav a[aria-current="page"]{border-color:var(--brass);}
 .page-hero{background:var(--charcoal);color:var(--bone);}
 .page-hero .wrap{padding-top:64px;padding-bottom:64px;max-width:760px;}
 .page-hero .eyebrow{font-size:14px;color:var(--brass);margin-bottom:14px;}
-.page-hero h1{font-size:clamp(32px,4.5vw,46px);}
+.page-hero h1{font-size:clamp(32px,4.5vw,46px);color:var(--bone);}
 .page-hero p.lede{
   margin-top:18px;
   font-size:17px;
