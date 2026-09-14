@@ -356,5 +356,3 @@ footer address{font-style:normal;font-size:14.5px;line-height:1.7;}
   .footer-grid{grid-template-columns:1fr;gap:32px;}
   .collection,.craft-steps,.dark-band,.content{padding-top:56px;padding-bottom:56px;}
 }
-.hero-copy h1,
-.page-hero h1{ color:var(--bone); }
