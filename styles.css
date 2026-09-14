@@ -114,18 +114,27 @@ nav.primary-nav a[aria-current="page"]{border-color:var(--brass);}
   transition:background .15s ease;
 }
 .btn-primary:hover{background:var(--rust-deep);}
-.{
+.btn-whatsapp{
   display:inline-block;
-  background:#25d366;
+  background:rgba(37,211,102,.88);
   color:#10251a;
   padding:12px 20px;
-  border-radius:999px);
+  border:1px solid rgba(255,255,255,.45);
+  border-radius:999px;
   font-size:15px;
   font-weight:500;
   text-decoration:none;
-  transition:background .15s ease, color .15s ease;
-}btn-whatsapp
-.btn-whatsapp:hover{background:#1da851;color:var(--bone);}
+  box-shadow:0 6px 18px rgba(16,37,26,.16), inset 0 1px 0 rgba(255,255,255,.35);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  transition:background .15s ease, color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.btn-whatsapp:hover{
+  background:rgba(29,168,81,.95);
+  color:var(--bone);
+  transform:translateY(-2px);
+  box-shadow:0 9px 22px rgba(16,37,26,.22), inset 0 1px 0 rgba(255,255,255,.4);
+}
 .link-ghost{
   text-decoration:none;
   font-size:15px;
