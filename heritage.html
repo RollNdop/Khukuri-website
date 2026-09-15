@@ -7,7 +7,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
@@ -33,7 +33,7 @@
   </div>
 </header>
 
-<section class="page-hero" id="main">>
+<section class="page-hero" id="main">
   <div class="wrap">
     <p class="eyebrow">Heritage</p>
     <h1>The khukuri: origin and heritage</h1>
@@ -118,7 +118,7 @@
   window.addEventListener('scroll', function () {
     if (window.scrollY > 500) { backToTop.classList.add('is-visible'); }
     else { backToTop.classList.remove('is-visible'); }
-  });
+  }, { passive: true });
 </script>
 </body>
 </html>
