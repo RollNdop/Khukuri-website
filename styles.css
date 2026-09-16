@@ -212,16 +212,8 @@ button{font-family:inherit;cursor:pointer;}
   transition:color .15s ease, transform .15s ease;
 }
 .quiet-item:hover{color:var(--rust);transform:translateX(4px);}
-.quiet-item .qi-price{
-  color:var(--ash);font-size:14px;display:flex;align-items:center;gap:8px;
-  transition:color .15s ease;
-}
+.quiet-item .qi-price{color:var(--ash);font-size:14px;transition:color .15s ease;}
 .quiet-item:hover .qi-price{color:var(--charcoal);}
-.quiet-item .qi-arrow{
-  color:var(--brass);opacity:0;transform:translateX(-4px);
-  transition:opacity .15s ease, transform .15s ease;
-}
-.quiet-item:hover .qi-arrow{opacity:1;transform:translateX(0);}
 
 /* ---------- Collection / product cards (shop page) ---------- */
 .collection{padding-top:96px;padding-bottom:96px;}
