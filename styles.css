@@ -74,10 +74,8 @@ button{font-family:inherit;cursor:pointer;}
 .btn-primary{
   display:inline-block;background-color:var(--rust);color:var(--bone);border:none;
   padding:14px 28px;border-radius:var(--radius);font-size:15px;font-weight:500;
-  text-decoration:none;transition:background-color .15s ease;
   text-decoration:none;transition:background-color .15s ease, transform .15s ease, box-shadow .15s ease;
 }
-.btn-primary:hover{background-color:var(--rust-deep);}
 .btn-primary:hover{
   background-color:var(--rust-deep);
   transform:translateY(-1px);
@@ -192,7 +190,6 @@ button{font-family:inherit;cursor:pointer;}
   border:1px solid rgba(184,147,79,.18);
   box-shadow:0 12px 36px rgba(33,29,26,.08);
 }
-.signature-art{display:flex;justify-content:center;}
 .signature-art{
   display:flex;justify-content:center;align-items:center;
   background:radial-gradient(ellipse 70% 60% at 50% 50%, rgba(184,147,79,.12), transparent 70%);
@@ -214,8 +211,6 @@ button{font-family:inherit;cursor:pointer;}
   text-decoration:none;color:var(--charcoal);font-size:15.5px;
   transition:color .15s ease, transform .15s ease;
 }
-.quiet-item:hover{color:var(--rust);}
-.quiet-item .qi-price{color:var(--ash);font-size:14px;}
 .quiet-item:hover{color:var(--rust);transform:translateX(4px);}
 .quiet-item .qi-price{
   color:var(--ash);font-size:14px;display:flex;align-items:center;gap:8px;
@@ -277,7 +272,6 @@ button{font-family:inherit;cursor:pointer;}
 .dark-band .link-ghost:hover{border-color:var(--bone);color:#fff;}
 
 /* ---------- Testimonial ---------- */
-.testimonial{padding-top:88px;padding-bottom:88px;text-align:center;}
 .testimonial{padding-top:88px;padding-bottom:88px;text-align:center;border-top:1px solid var(--line);}
 .testimonial blockquote{margin:0 auto;max-width:44ch;font-family:'Fraunces', serif;font-size:26px;font-weight:400;line-height:1.4;}
 .testimonial cite{display:block;margin-top:20px;font-style:normal;font-size:14px;color:var(--ash);}
