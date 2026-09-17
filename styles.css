@@ -2,7 +2,9 @@
    Bishwakarma Khukuri Industry — shared stylesheet
    "Forge and brass" design system. Used by every page.
    ========================================================== */
-
+  @view-transition {
+  navigation: auto;
+}
 :root{
   --charcoal:#211d1a;
   --charcoal-soft:#2b2621;
